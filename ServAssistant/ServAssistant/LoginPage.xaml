@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ServAssistant"
+             x:Class="ServAssistant.LoginPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Login" FontSize="Large"/>
+        <Entry x:Name="loginText" Text=""/>
+        <Label Text="Hasło" FontSize="Large"/>
+        <Entry x:Name="passwordText" IsPassword="true" Text="" />
+        <Button x:Name="buttonLogin" Text="Zaloguj" BackgroundColor="LightSeaGreen"/>
+        <Button x:Name="buttonRegister" Text="Zarejestruj się" BackgroundColor="LightSeaGreen"/>
+        <Label x:Name="jsonLabel" Text="" />
+        <ActivityIndicator HeightRequest="70" IsVisible="False" IsRunning="True" HorizontalOptions="CenterAndExpand" x:Name="loginIndicator"/>
+        
+    </StackLayout>
+
+</ContentPage>

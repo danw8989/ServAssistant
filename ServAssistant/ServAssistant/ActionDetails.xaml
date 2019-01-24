@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServAssistant.ActionDetails">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Wpisz nazwę urządzenia" Text="" x:Name="deviceName"/>
+                <Entry x:Name="numberOfDevices" Placeholder="Ile?" WidthRequest="50" Keyboard="Numeric"/>
+            </StackLayout>
+        <Picker x:Name="categoryPicker" ItemsSource="{Binding nazwa}"/>
+            <Picker x:Name="actionTypePicker" ItemsSource="{Binding nazwa}"/>
+            <Button x:Name="addDeviceButton" Text="Dodaj nowe urządzenie/urządzenia" BackgroundColor="LightSeaGreen"/>
+            <ListView x:Name="listDevices" BackgroundColor="AntiqueWhite">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding nazwa}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="acceptActionButton" Text="Ustaw jako zakończoną" BackgroundColor="LightSeaGreen"/>
+            <Label x:Name="conservationLabel" Text="Następna Konserwacja: " BackgroundColor="OrangeRed" FontAttributes="Bold" FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

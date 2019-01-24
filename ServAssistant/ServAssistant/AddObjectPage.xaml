@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ServAssistant.AddObjectPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Miejscowość" HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="editCity" Text=""/>
+            <Label Text="Ulica" HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="editStreet" Text=""/>
+            <Label Text="Nr Domu" HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="editNumber" Keyboard="Numeric" Text=""/>
+            <Label Text="Dodatkowe info" HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="infoNazwa" Placeholder="Nazwa" Text="" HorizontalOptions="FillAndExpand"/>
+                <Entry x:Name="infoValue" Placeholder="Wartość" Text="" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <Button x:Name="infoButtonAdd" Text="Dodaj dodatkowe informacje" BackgroundColor="LightSeaGreen"/>
+            <Button x:Name="buttonAddObject" Text="Dodaj obiekt" BackgroundColor="LightSeaGreen"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
